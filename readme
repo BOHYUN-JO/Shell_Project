@@ -1,4 +1,4 @@
-[system programming project4 Phase1]
+[system programming project4 Phase2]
 
 /* How to compile */
 > make
@@ -14,6 +14,15 @@ ls : listing the directory contents
 mkdir, rmdir : create and remove directory using your shell
 touch, cat, echo : creating, reading and printing the contents of a file
 exit : shell quits and returns to original program(parent process)
+
+In phase2, user can pipe commands such as
+
+ls -al | grep filename
+cat filename | less
+cat filename | grep -v "abc" | sort -r
+
+unfortunately, only two pipes(max) are allowed this program. :(
+
 
 /* Written by */
 BoHyun Jo, undergraduate Economics and Computer Science at Sogang Univ.
