@@ -138,6 +138,9 @@ int parseline(char *buf, char **argv, int *argc)
 	    argv[(*argc)++] = buf;
         num++;
 	    *delim = '\0';
+        if(argv[*argc-1][strlen(argv[*argc-1])-1] == '\"'){ // remove "
+           argv[*argc-1][strlen(argv[*argc-1])-1] = '\0';
+        }  
 	    buf = delim + 1;
 	    while (*buf && (*buf == ' ')) /* Ignore spaces */
             buf++;
@@ -161,6 +164,9 @@ int parseline(char *buf, char **argv, int *argc)
         }
         while (*buf && (*buf == ' ')) /* Ignore spaces */
             buf++;
+        if(*buf == '\"'){   // remove "
+            buf++;
+        }    
     }
     argv[*argc] = NULL;
     
