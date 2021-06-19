@@ -51,6 +51,16 @@ typedef struct {
 } rio_t;
 /* $end rio_t */
 
+typedef struct _Node{
+    int job_id;
+    pid_t pid;
+    char status[20];
+    int state;
+    char cmd[100];
+    struct _Node* next;
+    struct _Node* prev;
+}Job;
+
 /* External variables */
 extern int h_errno;    /* Defined by BIND for DNS errors */ 
 extern char **environ; /* Defined by libc */
