@@ -1,10 +1,14 @@
-[system programming project4 Phase3]
+#[system programming project4 Phase3]
 
 /* How to compile */
+```
 > make
+```
 
 /* How to run */
+```
 > ./myshell
+```
 
 /* About Program */
 This program is simple shell.
