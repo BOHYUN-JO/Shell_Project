@@ -1,5 +1,8 @@
 # Shell_Project
 
+Environment
+1. OS : Ubuntu 16.04.2 LTS (GNU/Linux 4.4.0-193-generic x86_64)
+
 How to compile 
 ```
 > make
