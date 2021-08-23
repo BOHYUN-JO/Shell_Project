@@ -32,7 +32,7 @@ sigset_t mask, prev;
 int print_flag = 0; // if there is somgthing to print : 1 else : 0
 Job* head = NULL;   // job list head
 
-int main() 
+int main() // test
 {
     char cmdline[MAXLINE]; /* Command line */
     char* msg;
